@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">FreedomNetworkPOS</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="login">Login</string>
+    <string name="withdraw">Withdraw</string>
+    <string name="transfer">Transfer</string>
+    <string name="eod">EOD</string>
+    <string name="airtime">Airtime</string>
+    <string name="transaction">Transaction</string>
+    <string name="bank_network">Bank Network</string>
+    <string name="card_balance">Card Balance</string>
+    <string name="bills">Bills</string>
+    <string name="quick_actions">Quick Actions</string>
+</resources>

@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="insert_card">Please insert card</string>
+    <string name="tap_card">Please tap cap</string>
+    <string name="swipe_card">Please swipe card</string>
+    <string name="key_in_card">Please key in card</string>
+    <string name="insert_or_swipe_card">Please insert or swipe card</string>
+    <string name="insert_or_tap_card">Please insert or tap card</string>
+    <string name="insert_tap_key_card">Please insert or tap key card</string>
+    <string name="insert_swipe_tap_card">Please insert/swipe/tap card</string>
+    <string name="insert_swipe_tap_key_card">Please insert/swipe/tap key card</string>
+</resources>

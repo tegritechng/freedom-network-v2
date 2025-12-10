@@ -27,7 +27,7 @@
         <item name="android:textSize">12sp</item>
 <!--        <item name="android:lineSpacingExtra">4sp</item>-->
         <item name="android:textAlignment">textStart</item>
-        <item name="android:textFontWeight">500</item>
+<!--        <item name="android:textFontWeight">500</item>-->
         <!--        <item name="android:lineHeight">28sp</item>-->
 <!--        <item name="android:letterSpacing">-0.02</item> &lt;!&ndash; -2% &ndash;&gt;-->
     </style>

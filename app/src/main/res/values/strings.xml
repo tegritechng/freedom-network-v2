@@ -12,4 +12,6 @@
     <string name="card_balance">Card Balance</string>
     <string name="bills">Bills</string>
     <string name="quick_actions">Quick Actions</string>
+    <string name="agent_pin">Agent PIN</string>
+    <string name="agent_id">Agent ID</string>
 </resources>

@@ -1,0 +1,6 @@
+<resources>
+    <declare-styleable name="Keypad">
+        <attr name="isNumberPad" format="boolean" />
+        <attr name="receiver" format="reference" />
+    </declare-styleable>
+</resources>

@@ -9,6 +9,7 @@ import androidx.fragment.app.viewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
+import androidx.navigation.fragment.findNavController
 import androidx.recyclerview.widget.GridLayoutManager
 import com.threelineng.freedomnetwork.R
 import com.threelineng.freedomnetwork.databinding.FragmentHomeBinding
@@ -38,7 +39,7 @@ class HomeFragment : Fragment() {
                 when (it.type) {
 
                     HomeItemType.WITHDRAW -> {
-//                        findNavController().navigate(R.id.action_homeFragment_to_card_nav_graph)
+                        findNavController().navigate(R.id.action_homeFragment_to_withdrawal_nav_graph)
                     }
 
                     HomeItemType.TRANSFER -> {

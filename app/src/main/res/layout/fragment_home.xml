@@ -8,46 +8,135 @@
     android:padding="20dp"
     tools:context=".home.ui.HomeFragment">
 
-    <androidx.appcompat.widget.LinearLayoutCompat
+    <RelativeLayout
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="48dp"
+        android:layout_marginBottom="16dp"
         android:orientation="horizontal">
 
         <TextView
+            android:id="@+id/tv_initials"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:background="@drawable/initials_bg"
+            android:gravity="center"
+            android:layout_alignParentStart="true"
+            android:layout_centerVertical="true"
+            android:layout_marginEnd="8dp"
+            android:text="RA"
+            android:textColor="@android:color/white"
+            android:textSize="10sp"
+            android:textStyle="bold" />
+
+        <TextView
             android:id="@+id/agent_name_text_view"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:textAlignment="center"
-            android:textAllCaps="true"
+            android:layout_marginLeft="8dp"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/tv_initials"
+            android:textAllCaps="false"
             android:textAppearance="@style/f12w500"
             android:textColor="@color/freedom_dark"
-            tools:text="Loren Ipsum" />
+            tools:text="Hi, Stromag Ventures"
+            android:text="Hi, Stromag Ventures" />
 
-    </androidx.appcompat.widget.LinearLayoutCompat>
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_alignParentEnd="true"
+            android:orientation="horizontal">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/network_icon"
+                android:layout_marginRight="8dp"
+                android:scaleType="centerCrop"/>
+
+            <ImageView
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:src="@drawable/notification"
+                android:scaleType="centerCrop"/>
+
+        </LinearLayout>
+
+
+
+    </RelativeLayout>
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="84dp">
+
+        <!-- Background shape -->
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/agent_account_bg"
+            android:orientation="horizontal">
+
+            <!-- Left empty space (61%) -->
+            <View
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="61" />
+
+            <!-- Right image (39%) -->
+            <ImageView
+                android:layout_width="0dp"
+                android:layout_height="match_parent"
+                android:layout_weight="39"
+                android:src="@drawable/dash_bg"
+                android:scaleType="centerCrop"/>
+        </LinearLayout>
+
+        <!-- Centered text -->
+        <TextView
+            android:id="@+id/centerText"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            tools:text="222-9083-982"
+            android:text="222-9083-982"
+            android:textColor="@android:color/white"
+            android:textSize="28sp"
+            android:textStyle="bold"
+            android:fontFamily="@font/roboto"
+            android:layout_gravity="center" />
+
+    </FrameLayout>
+
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:text="@string/quick_actions"
+        android:layout_marginTop="16dp"
         android:textAlignment="textStart"
-        android:textAllCaps="true"
+        android:textAllCaps="false"
         android:textAppearance="@style/f12w500"
         android:textColor="@color/freedom_dark" />
 
     <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:layout_marginTop="8dp"
         app:cardBackgroundColor="#F9FAFD"
         app:cardCornerRadius="10dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/home_grid"
-            android:layout_width="match_parent"
+            android:layout_width="wrap_content"
             android:layout_height="wrap_content"
+            android:clipToPadding="false"
+            android:layout_gravity="center_horizontal"
+            android:overScrollMode="never"
             android:paddingStart="11dp"
             android:paddingTop="5dp"
             android:paddingEnd="11dp"
             android:paddingBottom="11dp"
+            app:layoutManager="androidx.recyclerview.widget.GridLayoutManager"
             tools:itemCount="3"
             tools:listitem="@layout/content_home_grid_item" />
 

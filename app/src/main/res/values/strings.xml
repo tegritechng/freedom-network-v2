@@ -17,4 +17,5 @@
     <string name="withdrawal">Withdrawal</string>
     <string name="enter_amount">Enter Amount</string>
     <string name="proceed">Proceed</string>
+    <string name="please_insert_card_here">Please insert your card here</string>
 </resources>

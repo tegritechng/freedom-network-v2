@@ -18,8 +18,7 @@
         android:id="@+id/transactionRecordFragment"
         android:name="com.threelineng.freedomnetwork.transactions.TransactionRecordFragment"
         android:label="fragment_transaction_report"
-        tools:layout="@layout/fragment_transaction_report" />
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_transaction_report" >
         <action
             android:id="@+id/action_homeFragment_to_withdrawal_nav_graph"
             app:destination="@id/withdrawal_nav_graph" />

@@ -18,5 +18,7 @@
         android:id="@+id/insertCardFragment"
         android:name="com.threelineng.freedomnetwork.withdrawal.InsertCardFragment"
         android:label="fragment_insert_card"
-        tools:layout="@layout/fragment_insert_card" />
+        tools:layout="@layout/fragment_insert_card" >
+
+    </fragment>
 </navigation>

@@ -14,4 +14,8 @@
     <string name="quick_actions">Quick Actions</string>
     <string name="agent_pin">Agent PIN</string>
     <string name="agent_id">Agent ID</string>
+
+
+    <string name="amount_format">\u20A6 %1$s</string>
+    <string name="amount_format_ngn">NGN %1$s</string>
 </resources>

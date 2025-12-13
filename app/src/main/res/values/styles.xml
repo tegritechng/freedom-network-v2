@@ -27,8 +27,24 @@
         <item name="android:textSize">12sp</item>
 <!--        <item name="android:lineSpacingExtra">4sp</item>-->
         <item name="android:textAlignment">textStart</item>
-<!--        <item name="android:textFontWeight">500</item>-->
+        <item name="android:textFontWeight">500</item>
         <!--        <item name="android:lineHeight">28sp</item>-->
 <!--        <item name="android:letterSpacing">-0.02</item> &lt;!&ndash; -2% &ndash;&gt;-->
+    </style>
+    <style name="f11w400">
+        <!--        <item name="android:textStyle">bold</item>-->
+        <item name="android:textSize">11sp</item>
+                <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textAlignment">textStart</item>
+                <item name="android:textFontWeight">400</item>
+        <!--        <item name="android:lineHeight">28sp</item>-->
+                <item name="android:letterSpacing">-0.06</item> <!-- -2% -->
+    </style>
+    <style name="f24w700">
+        <!--        <item name="android:textStyle">bold</item>-->
+        <item name="android:textSize">24sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textFontWeight">700</item>
     </style>
 </resources>

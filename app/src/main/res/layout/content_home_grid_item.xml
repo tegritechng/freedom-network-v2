@@ -2,15 +2,20 @@
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="70dp"
-    android:layout_height="90dp"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
     android:layout_gravity="center"
     android:layout_marginTop="8dp"
+    android:minHeight="100dp"
+    android:minWidth="110dp"
     android:layout_weight="1"
     android:background="@drawable/border_radius_12"
     android:gravity="center"
     android:orientation="vertical"
-    android:padding="5dp">
+    android:paddingStart="15dp"
+    android:paddingTop="18dp"
+    android:paddingEnd="15dp"
+    android:paddingBottom="18dp">
 
     <androidx.appcompat.widget.AppCompatImageView
         android:id="@+id/icon"

@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/withdrawal_nav_graph"
+    app:startDestination="@id/amountEntryFragment">
+
+    <fragment
+        android:id="@+id/amountEntryFragment"
+        android:name="com.threelineng.freedomnetwork.common.ui.card.AmountEntryFragment"
+        android:label="fragment_amount_entry"
+        tools:layout="@layout/fragment_amount_entry" >
+        <action
+            android:id="@+id/action_amountEntryFragment_to_insertCardFragment"
+            app:destination="@id/insertCardFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/insertCardFragment"
+        android:name="com.threelineng.freedomnetwork.withdrawal.InsertCardFragment"
+        android:label="fragment_insert_card"
+        tools:layout="@layout/fragment_insert_card" />
+</navigation>

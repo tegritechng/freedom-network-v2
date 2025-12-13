@@ -39,7 +39,7 @@ class HomeFragment : Fragment() {
                 when (it.type) {
 
                     HomeItemType.WITHDRAW -> {
-//                        findNavController().navigate(R.id.action_homeFragment_to_card_nav_graph)
+                        findNavController().navigate(R.id.action_homeFragment_to_withdrawal_nav_graph)
                     }
 
                     HomeItemType.TRANSFER -> {

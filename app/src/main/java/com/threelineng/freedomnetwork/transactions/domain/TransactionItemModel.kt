@@ -21,7 +21,7 @@ data class TransactionItemModel(
     val transactionStatus: TransactionStatus
         get() = when (status.lowercase(Locale.getDefault())) {
             "complete", "completed", "approved", "successful" -> {
-                TransactionStatus.SUCCESSFUL
+                TransactionStatus.APPROVED
             }
 
             "failed", "declined" -> {

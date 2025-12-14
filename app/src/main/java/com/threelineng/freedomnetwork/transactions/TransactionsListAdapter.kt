@@ -59,9 +59,9 @@ class TransactionsListAdapter(
                 view.amount.text = context.getString(R.string.amount_format, amount.toString())
                 view.status.apply {
                     text = transactionStatus.typeName
-                    setTextColor(context.color(if (transactionStatus == TransactionStatus.SUCCESSFUL) R.color.success else if (transactionStatus == TransactionStatus.FAILED) R.color.failed else R.color.pending))
+                    setTextColor(context.color(if (transactionStatus == TransactionStatus.APPROVED) R.color.success else if (transactionStatus == TransactionStatus.FAILED) R.color.failed else R.color.pending))
                     backgroundTintList = ColorStateList.valueOf(
-                        context.getColor(if (transactionStatus == TransactionStatus.SUCCESSFUL) R.color.success_bg else if (transactionStatus == TransactionStatus.FAILED) R.color.failed_bg else R.color.pending_bg)
+                        context.getColor(if (transactionStatus == TransactionStatus.APPROVED) R.color.success_bg else if (transactionStatus == TransactionStatus.FAILED) R.color.failed_bg else R.color.pending_bg)
                     )
                 }
                 view.dateTime.text = trxDateTime

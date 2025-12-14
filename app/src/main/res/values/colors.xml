@@ -21,5 +21,5 @@
     <color name="red">#EA0029</color>
     <color name="default_">#111827</color>
     <color name="accent">#2168F3</color>
-
+    <color name="box_stroke_colors">#D2DAE1</color>
 </resources>

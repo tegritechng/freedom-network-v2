@@ -1,5 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
+
     <style name="customButton" parent="Widget.MaterialComponents.Button.TextButton">
         <item name="android:backgroundTint">@color/primary</item>
         <item name="android:textColor">@color/white</item>
@@ -22,15 +23,60 @@
         <item name="shapeAppearance">@style/ShapeAppearance.App.MediumComponent</item>
         <item name="shapeAppearanceOverlay">@null</item>
     </style>
+
+
+    <style name="editText" parent="Widget.MaterialComponents.TextInputLayout.OutlinedBox.Dense">
+        <!-- Box appearance -->
+        <item name="boxBackgroundMode">outline</item>
+        <item name="boxCornerRadiusTopStart">8dp</item>
+        <item name="boxCornerRadiusTopEnd">8dp</item>
+        <item name="boxCornerRadiusBottomStart">8dp</item>
+        <item name="boxCornerRadiusBottomEnd">8dp</item>
+        <item name="boxStrokeWidth">1dp</item>
+        <item name="boxStrokeWidthFocused">2dp</item>
+        <item name="boxStrokeColor">@color/box_stroke_colors</item>
+        <item name="android:background">@drawable/border_radius_5</item>
+        <item name="android:textStyle">normal</item>
+        <item name="hintTextAppearance">@style/f10w400</item>
+        <item name="textInputStyle">@style/f10w400</item>
+        <!--        <item name="android:fontWeight">400</item> &lt;!&ndash; Regular weight &ndash;&gt;-->
+        <!--        <item name="android:textSize">15sp</item> &lt;!&ndash; Font size &ndash;&gt;-->
+        <!--        <item name="android:lineHeight">24sp</item> &lt;!&ndash; Line height &ndash;&gt;-->
+        <!--        <item name="android:lineSpacingExtra">9sp</item> &lt;!&ndash; LineHeight (24sp) - TextSize (15sp) &ndash;&gt;-->
+        <item name="android:textAlignment">viewStart</item> <!-- Align text to the left -->
+    </style>
+
     <style name="f12w500">
         <!--        <item name="android:textStyle">bold</item>-->
         <item name="android:textSize">12sp</item>
         <item name="android:fontFamily">@font/inter_medium</item>
-<!--        <item name="android:lineSpacingExtra">4sp</item>-->
+        <!--        <item name="android:lineSpacingExtra">4sp</item>-->
         <item name="android:textAlignment">textStart</item>
         <item name="android:textFontWeight">500</item>
         <!--        <item name="android:lineHeight">28sp</item>-->
-<!--        <item name="android:letterSpacing">-0.02</item> &lt;!&ndash; -2% &ndash;&gt;-->
+        <!--        <item name="android:letterSpacing">-0.02</item> &lt;!&ndash; -2% &ndash;&gt;-->
+    </style>
+
+    <style name="f16w500">
+        <!--        <item name="android:textStyle">bold</item>-->
+        <item name="android:textSize">16sp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:lineHeight">19.2sp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textFontWeight">500</item>
+        <!--        <item name="android:lineHeight">28sp</item>-->
+        <item name="android:letterSpacing">0.01</item> <!-- -2% -->
+    </style>
+
+    <style name="f8w400">
+        <!--        <item name="android:textStyle">bold</item>-->
+        <item name="android:textSize">12sp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:lineSpacingExtra">5sp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textFontWeight">400</item>
+        <!--        <item name="android:lineHeight">28sp</item>-->
+        <item name="android:letterSpacing">0.06</item> <!-- -2% -->
     </style>
 
     <style name="f12w400">
@@ -43,15 +89,28 @@
         <!--        <item name="android:lineHeight">28sp</item>-->
         <!--        <item name="android:letterSpacing">-0.02</item> &lt;!&ndash; -2% &ndash;&gt;-->
     </style>
+
     <style name="f11w400">
         <!--        <item name="android:textStyle">bold</item>-->
         <item name="android:textSize">11sp</item>
-                <item name="android:lineSpacingExtra">2sp</item>
+        <item name="android:lineSpacingExtra">2sp</item>
         <item name="android:textAlignment">textStart</item>
-                <item name="android:textFontWeight">400</item>
+        <item name="android:textFontWeight">400</item>
         <!--        <item name="android:lineHeight">28sp</item>-->
-                <item name="android:letterSpacing">-0.06</item> <!-- -2% -->
+        <item name="android:letterSpacing">-0.06</item> <!-- -2% -->
     </style>
+
+    <style name="f10w400">
+        <!--        <item name="android:textStyle">bold</item>-->
+        <item name="android:textSize">10sp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <item name="android:lineSpacingExtra">3sp</item>
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textFontWeight">400</item>
+        <!--        <item name="android:lineHeight">28sp</item>-->
+        <item name="android:letterSpacing">0.03</item> <!-- -2% -->
+    </style>
+
     <style name="f24w700">
         <!--        <item name="android:textStyle">bold</item>-->
         <item name="android:textSize">24sp</item>

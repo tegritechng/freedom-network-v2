@@ -26,4 +26,7 @@
     <string name="end_of_day_report">End of Day Report</string>
     <string name="full_report">Full Report</string>
     <string name="summary">Summary</string>
+    <string name="transfer_method">Transfer Method</string>
+    <string name="error_required">Required</string>
+
 </resources>

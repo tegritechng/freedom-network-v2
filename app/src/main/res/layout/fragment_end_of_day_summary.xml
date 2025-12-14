@@ -1,0 +1,272 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".eod.EndOfDaySummaryFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back_icon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="24dp"
+            app:srcCompat="@drawable/ic_arrow_left" />
+
+        <TextView
+            style="@style/f12w500"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/end_of_day_report"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="21dp"
+        android:background="#F1F2F6"
+        android:orientation="horizontal"
+        android:paddingStart="19dp"
+        android:paddingTop="9dp"
+        android:paddingEnd="19dp"
+        android:paddingBottom="7dp">
+
+        <TextView
+            android:id="@+id/transactions_text_view"
+            style="@style/f12w400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/mazzard"
+            android:text="All Transactions"
+            android:textAlignment="textStart"
+            android:textColor="#738194"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/date_time_text_view"
+            style="@style/f12w400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/mazzard"
+            android:text="@string/summary"
+            android:textAlignment="textEnd"
+            android:textColor="#738194"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="41dp"
+        android:layout_marginEnd="9dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#E7E9EF" />
+
+        <TextView
+            style="@style/f12w400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:gravity="center"
+            android:text="Transaction Count"
+            android:textAlignment="center"
+            android:textColor="#738194"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#E7E9EF" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="18dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/f12w400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/mazzard"
+            android:text="Approved"
+            android:textAlignment="textStart"
+            android:textColor="#738194"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/approved_count_text_view"
+            style="@style/f12w400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/mazzard"
+            android:text="@string/summary"
+            android:textAlignment="textEnd"
+            android:textColor="#738194"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="18dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/f12w400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/mazzard"
+            android:text="Failed"
+            android:textAlignment="textStart"
+            android:textColor="#738194"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/failed_count_text_view"
+            style="@style/f12w400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/mazzard"
+            android:text="@string/summary"
+            android:textAlignment="textEnd"
+            android:textColor="#738194"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <androidx.appcompat.widget.LinearLayoutCompat
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="9dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginEnd="9dp"
+        android:orientation="horizontal">
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#E7E9EF" />
+
+        <TextView
+            style="@style/f12w400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="6dp"
+            android:layout_marginEnd="6dp"
+            android:gravity="center"
+            android:text="Transaction Amount"
+            android:textAlignment="center"
+            android:textColor="#738194"
+            android:textStyle="bold" />
+
+        <View
+            android:layout_width="wrap_content"
+            android:layout_height="1dp"
+            android:layout_gravity="center"
+            android:layout_weight="1"
+            android:background="#E7E9EF" />
+    </androidx.appcompat.widget.LinearLayoutCompat>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="18dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/f12w400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/mazzard"
+            android:text="Approved"
+            android:textAlignment="textStart"
+            android:textColor="#738194"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/approved_amount_text_view"
+            style="@style/f12w400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/mazzard"
+            android:text="@string/summary"
+            android:textAlignment="textEnd"
+            android:textColor="#738194"
+            android:textStyle="bold" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="18dp"
+        android:layout_marginTop="11dp"
+        android:layout_marginEnd="18dp"
+        android:orientation="horizontal">
+
+        <TextView
+            style="@style/f12w400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/mazzard"
+            android:text="Failed"
+            android:textAlignment="textStart"
+            android:textColor="#738194"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/failed_amount_text_view"
+            style="@style/f12w400"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:fontFamily="@font/mazzard"
+            android:text="@string/summary"
+            android:textAlignment="textEnd"
+            android:textColor="#738194"
+            android:textStyle="bold" />
+    </LinearLayout>
+</androidx.appcompat.widget.LinearLayoutCompat>

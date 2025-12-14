@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".transfer.TransferFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back_icon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="17dp"
+            app:srcCompat="@drawable/ic_arrow_left" />
+
+        <TextView
+            style="@style/f12w500"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/transfer"
+            android:textAlignment="center"
+            android:textColor="@color/black"
+            android:textStyle="bold" />
+
+    </FrameLayout>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="23dp"
+        android:layout_marginEnd="17dp"
+        android:text="Select Bank"
+        android:textAlignment="textStart"
+        android:textAppearance="@style/f8w400"
+        android:textStyle="normal" />
+
+    <LinearLayout
+        android:id="@+id/billerLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginEnd="17dp"
+        android:background="@drawable/border_radius_5"
+        android:orientation="horizontal"
+        android:padding="12dp">
+
+        <TextView
+            android:id="@+id/bank_name_textview"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:layout_marginStart="8dp"
+            android:layout_marginEnd="8dp"
+            android:layout_weight="1"
+            android:textAppearance="@style/f12w400"
+            tools:text="GT BANK PLC" />
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:layout_width="28dp"
+            android:layout_height="28dp"
+            android:layout_gravity="center"
+            android:padding="4dp"
+            android:src="@drawable/ic_chevron_down" />
+    </LinearLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="28dp"
+        android:layout_marginEnd="17dp"
+        android:hint="Account Number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/phoneNumberTextField"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="10"
+            android:textAlignment="textStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <TextView
+        android:id="@+id/account_name_textview"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="6dp"
+        android:layout_marginEnd="17dp"
+        android:textAlignment="textStart"
+        android:letterSpacing="0.03"
+        android:textAppearance="@style/f10w400"
+        tools:text="Loren Ipsum" />
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="17dp"
+        android:hint="Enter Amount">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/amountTextField"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:textAlignment="textStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="17dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="17dp"
+        android:layout_marginBottom="12dp"
+        android:hint="Customer Number">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/accountNumberTextField"
+            style="@style/editText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:maxLength="11"
+            android:textAlignment="textStart" />
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="1" />
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginEnd="50dp"
+        android:layout_marginBottom="48dp"
+        android:backgroundTint="@color/failed"
+        android:text="@string/proceed"
+        android:textColor="@android:color/white" />
+</androidx.appcompat.widget.LinearLayoutCompat>

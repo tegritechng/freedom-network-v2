@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".withdrawal.ProcessingFragment">
+
+    <TextView
+        style="@style/f11w400"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginStart="24dp"
+        android:layout_marginEnd="24dp"
+        android:letterSpacing="-0.031"
+        android:gravity="center"
+        android:lineSpacingExtra="5dp"
+        android:text="Processing..."
+        android:textAlignment="center"
+        android:textColor="@color/black"
+        android:textSize="16dp" />
+
+    <FrameLayout
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginTop="17.19dp"
+        android:background="@drawable/solid_stroke_radius_5"
+        android:padding="24dp"
+        app:strokeColor="@color/grey1">
+
+        <ProgressBar
+            android:id="@+id/progress_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:indeterminateDrawable="@drawable/loading_progress_bar" />
+
+    </FrameLayout>
+
+</LinearLayout>

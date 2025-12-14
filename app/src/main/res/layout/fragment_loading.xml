@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_gravity="center"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".common.ui.LoadingDialogFragment">
+
+    <TextView
+        android:id="@+id/text"
+        style="@style/f24w700"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="14dp"
+        android:letterSpacing="-0.05"
+        android:text="Please Wait..."
+        android:textAlignment="center" />
+
+    <TextView
+        android:id="@+id/additional_text"
+        style="@style/f12w400"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="22dp"
+        android:letterSpacing="-0.05"
+        android:textAlignment="center"
+        android:visibility="gone" />
+
+    <ProgressBar
+        android:id="@+id/progress_bar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:indeterminateDrawable="@drawable/loading_progress_bar" />
+
+</LinearLayout>

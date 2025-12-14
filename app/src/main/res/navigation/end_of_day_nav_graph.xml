@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/end_of_day_nav_graph"
+    app:startDestination="@id/endOfDayFragment">
+
+    <fragment
+        android:id="@+id/endOfDayFragment"
+        android:name="com.threelineng.freedomnetwork.eod.EndOfDayFragment"
+        android:label="fragment_end_of_day"
+        tools:layout="@layout/fragment_end_of_day" >
+        <action
+            android:id="@+id/action_endOfDayFragment_to_endOfDaySummaryFragment"
+            app:destination="@id/endOfDaySummaryFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/endOfDaySummaryFragment"
+        android:name="com.threelineng.freedomnetwork.eod.EndOfDaySummaryFragment"
+        android:label="fragment_end_of_day_summary"
+        tools:layout="@layout/fragment_end_of_day_summary" />
+</navigation>

@@ -1,7 +1,7 @@
 package com.threelineng.freedomnetwork.common.domain
 
 enum class TransactionStatus(val typeName: String) {
-    SUCCESSFUL("Successful"),
+    APPROVED("Approved"),
     FAILED("Failed"),
     PENDING("Pending");
 }

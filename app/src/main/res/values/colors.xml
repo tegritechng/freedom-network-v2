@@ -5,6 +5,7 @@
     <color name="primary">#FF0015</color>
     <color name="primaryDark">#99000F</color>
     <color name="agent_account_bg">#D60007</color>
+    <color name="acct_type_bg">#F1F2F6</color>
 
     <color name="freedom_dark">#363757</color>
     <color name="login_text_field_color">#60708F</color>

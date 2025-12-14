@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".withdrawal.SelectAccountTypeFragment">
+
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/inter_regular"
+        android:layout_marginTop="24dp"
+        android:text="@string/select_account_type" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="24dp"
+        android:background="@drawable/acct_type_bg"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="@color/filled_text"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="@string/savings" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:background="@drawable/acct_type_bg"
+        android:fontFamily="@font/inter_regular"
+        android:textColor="@color/filled_text"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="@string/current" />
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_gravity="center_vertical"
+        android:layout_marginTop="8dp"
+        android:textColor="@color/filled_text"
+        android:background="@drawable/acct_type_bg"
+        android:fontFamily="@font/inter_regular"
+        android:gravity="center_vertical"
+        android:paddingStart="32dp"
+        android:text="@string/default_acc" />
+
+
+</androidx.appcompat.widget.LinearLayoutCompat>

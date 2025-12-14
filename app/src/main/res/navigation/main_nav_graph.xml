@@ -28,9 +28,17 @@
         <action
             android:id="@+id/action_homeFragment_to_transfer_nav_graph"
             app:destination="@id/transfer_nav_graph" />
+        <action
+            android:id="@+id/action_transactionRecordFragment_to_transactionReceiptFragment"
+            app:destination="@id/transactionReceiptFragment" />
     </fragment>
     <include app:graph="@navigation/withdrawal_nav_graph" />
     <include app:graph="@navigation/end_of_day_nav_graph" />
     <include app:graph="@navigation/transfer_nav_graph" />
+    <fragment
+        android:id="@+id/transactionReceiptFragment"
+        android:name="com.threelineng.freedomnetwork.common.ui.TransactionReceiptFragment"
+        android:label="fragment_transaction_receipt"
+        tools:layout="@layout/fragment_transaction_receipt" />
 
 </navigation>

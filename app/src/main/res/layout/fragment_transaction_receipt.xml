@@ -1,0 +1,196 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".common.ui.TransactionReceiptFragment">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="6dp"
+        android:paddingBottom="6dp">
+
+        <androidx.appcompat.widget.AppCompatImageView
+            android:id="@+id/back_icon"
+            android:layout_width="26dp"
+            android:layout_height="26dp"
+            android:layout_gravity="start"
+            android:layout_marginStart="24dp"
+            app:srcCompat="@drawable/ic_arrow_left" />
+
+        <TextView
+            style="@style/f14w500"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_gravity="center"
+            android:gravity="center"
+            android:text="@string/receipt"
+            android:textAlignment="center"
+            android:textColor="@color/black" />
+
+    </FrameLayout>
+
+    <ImageView
+        android:id="@+id/gifImage"
+        android:src="@drawable/success_status"
+        android:layout_width="120dp"
+        android:layout_height="120dp"
+        android:layout_gravity="center"
+        android:layout_marginTop="45dp"
+        android:contentDescription="@string/loading" />
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:fontFamily="@font/helveticaneue_medium"
+        android:textStyle="bold"
+        style="@style/f28w400"
+        android:id="@+id/tv_amount"
+        android:text="@string/amount_format_ngn"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/f12w400"
+                android:id="@+id/tv_reference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/reference"
+                android:textAlignment="textStart"
+                android:textColor="@color/filled_text" />
+
+            <TextView
+                android:id="@+id/tv_reference_value"
+                style="@style/f12w400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:text="00022155454545"
+                android:textAlignment="textEnd"
+                android:textColor="@color/filled_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/f12w400"
+                android:id="@+id/tv_payment_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/payment_method"
+                android:textAlignment="textStart"
+                android:textColor="@color/filled_text" />
+
+            <TextView
+                android:id="@+id/tv_payment_method_value"
+                style="@style/f12w400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/card"
+                android:textAlignment="textEnd"
+                android:textColor="@color/filled_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/f12w400"
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:text="Status"
+                android:textAlignment="textStart"
+                android:textColor="@color/filled_text" />
+
+            <TextView
+                android:id="@+id/tv_status_value"
+                style="@style/f12w400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/successful"
+                android:textAlignment="textEnd"
+                android:textColor="@color/filled_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/f12w400"
+                android:id="@+id/tv_date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/date_time"
+                android:textAlignment="textStart"
+                android:textColor="@color/filled_text" />
+
+            <TextView
+                android:id="@+id/tv_date_time_value"
+                style="@style/f12w400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:text="06 May, 2024 | 11:30 PM"
+                android:textAlignment="textEnd"
+                android:textColor="@color/filled_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_print_receipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/failed"
+        android:text="@string/print_report"
+        android:textColor="@android:color/white" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

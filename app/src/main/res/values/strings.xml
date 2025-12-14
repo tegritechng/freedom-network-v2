@@ -32,4 +32,13 @@
     <string name="summary">Summary</string>
     <string name="transfer_method">Transfer Method</string>
     <string name="error_required">Required</string>
+    <string name="preview_summary">Preview Summary</string>
+    <string name="print_report">Print Report</string>
+    <string name="receipt">Receipt</string>
+    <string name="loading">transaction_status</string>
+    <string name="date_time">Date/Time</string>
+    <string name="successful">Successful</string>
+    <string name="card">Card</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="reference">Reference</string>
 </resources>

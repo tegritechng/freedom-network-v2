@@ -43,11 +43,11 @@ class HomeFragment : Fragment() {
                     }
 
                     HomeItemType.TRANSFER -> {
-                        findNavController().navigate(R.id.action_homeFragment_to_transfer_nav_graph)
+                        findNavController().navigate(R.id.transfer_nav_graph)
                     }
 
                     HomeItemType.END_OF_DAY -> {
-                        findNavController().navigate(R.id.action_homeFragment_to_end_of_day_nav_graph)
+                        findNavController().navigate(R.id.end_of_day_nav_graph)
 
                     }
 

@@ -47,6 +47,7 @@ class HomeFragment : Fragment() {
                     }
 
                     HomeItemType.END_OF_DAY -> {
+                        findNavController().navigate(R.id.action_homeFragment_to_end_of_day_nav_graph)
 
                     }
 

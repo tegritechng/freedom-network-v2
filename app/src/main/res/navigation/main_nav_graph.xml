@@ -22,6 +22,11 @@
         <action
             android:id="@+id/action_homeFragment_to_withdrawal_nav_graph"
             app:destination="@id/withdrawal_nav_graph" />
+        <action
+            android:id="@+id/action_homeFragment_to_end_of_day_nav_graph"
+            app:destination="@id/end_of_day_nav_graph" />
     </fragment>
     <include app:graph="@navigation/withdrawal_nav_graph" />
+    <include app:graph="@navigation/end_of_day_nav_graph" />
+
 </navigation>

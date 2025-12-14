@@ -22,4 +22,8 @@
 
     <string name="amount_format">\u20A6 %1$s</string>
     <string name="amount_format_ngn">NGN %1$s</string>
+    <string name="transaction_reports">Transaction Reports</string>
+    <string name="end_of_day_report">End of Day Report</string>
+    <string name="full_report">Full Report</string>
+    <string name="summary">Summary</string>
 </resources>

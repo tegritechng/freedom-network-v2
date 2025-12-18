@@ -1,56 +1,27 @@
 <?xml version="1.0" encoding="utf-8"?>
 <androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:tools="http://schemas.android.com/tools"
-    xmlns:app="http://schemas.android.com/apk/res-auto"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    tools:context=".common.ui.TransactionReceiptFragment">
-
-    <FrameLayout
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:paddingTop="6dp"
-        android:paddingBottom="6dp">
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:id="@+id/back_icon"
-            android:layout_width="26dp"
-            android:layout_height="26dp"
-            android:layout_gravity="start"
-            android:layout_marginStart="24dp"
-            app:srcCompat="@drawable/ic_arrow_left" />
-
-        <TextView
-            style="@style/f14w500"
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:layout_gravity="center"
-            android:gravity="center"
-            android:text="@string/receipt"
-            android:textAlignment="center"
-            android:textColor="@color/black" />
-
-    </FrameLayout>
-
-    <ImageView
-        android:id="@+id/gifImage"
-        android:src="@drawable/success_status"
-        android:layout_width="120dp"
-        android:layout_height="120dp"
-        android:layout_gravity="center"
-        android:layout_marginTop="45dp"
-        android:contentDescription="@string/loading" />
+    android:background="@drawable/gradient_bg"
+    tools:context=".common.ui.TransactionDetailsFragment">
 
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_gravity="center"
-        android:fontFamily="@font/helveticaneue_medium"
-        android:textStyle="bold"
-        style="@style/f28w400"
-        android:id="@+id/tv_amount"
-        android:text="@string/amount_format_ngn"/>
+        android:text="@string/amount_paid"
+        android:layout_marginTop="120dp"
+        style="@style/f15w400"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="5,000.00"
+        android:layout_marginTop="24dp"
+        style="@style/f24w700"/>
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -190,7 +161,7 @@
         android:layout_marginTop="48dp"
         android:layout_marginEnd="50dp"
         android:backgroundTint="@color/failed"
-        android:text="@string/print_receipt"
+        android:text="@string/reprint_receipt"
         android:textColor="@android:color/white" />
 
 </androidx.appcompat.widget.LinearLayoutCompat>

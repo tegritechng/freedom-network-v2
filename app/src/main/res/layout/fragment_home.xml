@@ -98,6 +98,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             tools:text="222-9083-982"
+            android:lineHeight="33dp"
             android:text="222-9083-982"
             android:textColor="@android:color/white"
             android:textSize="28sp"
@@ -123,7 +124,8 @@
         android:layout_height="match_parent"
         android:layout_marginTop="8dp"
         app:cardBackgroundColor="#F9FAFD"
-        app:cardCornerRadius="10dp">
+        app:cardCornerRadius="10dp"
+        app:strokeWidth="0dp">
 
         <androidx.recyclerview.widget.RecyclerView
             android:id="@+id/home_grid"

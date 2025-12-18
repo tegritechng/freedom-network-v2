@@ -42,7 +42,7 @@ class TransactionRecordFragment : Fragment() {
             }
             transactionsListAdapter = TransactionsListAdapter {
                 findNavController().navigate(
-                    R.id.action_transactionRecordFragment_to_transactionReceiptFragment
+                    R.id.action_transactionRecordFragment_to_transactionDetailsFragment2
                 )
 //                findNavController().navigate(
 //                    TransactionHistoryFragmentDirections.actionTransactionHistoryFragmentToTransactionItemDetailsFragment(

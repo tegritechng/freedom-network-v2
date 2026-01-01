@@ -29,8 +29,7 @@
             android:gravity="center"
             android:text="@string/end_of_day_report"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+            android:textColor="@color/black" />
 
     </FrameLayout>
 
@@ -54,8 +53,7 @@
             android:fontFamily="@font/mazzard"
             android:text="All Transactions"
             android:textAlignment="textStart"
-            android:textColor="#738194"
-            android:textStyle="bold" />
+            android:textColor="@color/filled_text" />
 
         <TextView
             android:id="@+id/date_time_text_view"
@@ -64,10 +62,9 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/mazzard"
-            android:text="Today"
+            android:text="@string/summary"
             android:textAlignment="textEnd"
-            android:textColor="#738194"
-            android:textStyle="bold" />
+            android:textColor="@color/filled_text" />
     </LinearLayout>
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -95,8 +92,7 @@
             android:gravity="center"
             android:text="Transaction Count"
             android:textAlignment="center"
-            android:textColor="#738194"
-            android:textStyle="bold" />
+            android:textColor="@color/filled_text" />
 
         <View
             android:layout_width="wrap_content"
@@ -119,11 +115,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/mazzard"
+            android:fontFamily="@font/inter_regular"
             android:text="Approved"
             android:textAlignment="textStart"
-            android:textColor="#738194"
-            android:textStyle="bold" />
+            android:textColor="@color/filled_text" />
 
         <TextView
             android:id="@+id/approved_count_text_view"
@@ -131,11 +126,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/mazzard"
+            android:fontFamily="@font/inter_regular"
             android:text="0"
             android:textAlignment="textEnd"
-            android:textColor="#738194"
-            android:textStyle="bold" />
+            android:textColor="@color/filled_text" />
     </LinearLayout>
 
     <LinearLayout
@@ -151,11 +145,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/mazzard"
+            android:fontFamily="@font/inter_regular"
             android:text="Failed"
             android:textAlignment="textStart"
-            android:textColor="#738194"
-            android:textStyle="bold" />
+            android:textColor="@color/filled_text" />
 
         <TextView
             android:id="@+id/failed_count_text_view"
@@ -163,11 +156,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/mazzard"
+            android:fontFamily="@font/inter_regular"
             android:text="0"
             android:textAlignment="textEnd"
-            android:textColor="#738194"
-            android:textStyle="bold" />
+            android:textColor="@color/filled_text" />
     </LinearLayout>
 
     <androidx.appcompat.widget.LinearLayoutCompat
@@ -195,8 +187,7 @@
             android:gravity="center"
             android:text="Transaction Amount"
             android:textAlignment="center"
-            android:textColor="#738194"
-            android:textStyle="bold" />
+            android:textColor="@color/filled_text" />
 
         <View
             android:layout_width="wrap_content"
@@ -219,11 +210,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/mazzard"
+            android:fontFamily="@font/inter_regular"
             android:text="Approved"
             android:textAlignment="textStart"
-            android:textColor="#738194"
-            android:textStyle="bold" />
+            android:textColor="@color/filled_text" />
 
         <TextView
             android:id="@+id/approved_amount_text_view"
@@ -231,11 +221,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/mazzard"
+            android:fontFamily="@font/inter_regular"
             android:text="NGN0.00"
             android:textAlignment="textEnd"
-            android:textColor="#738194"
-            android:textStyle="bold" />
+            android:textColor="@color/filled_text" />
     </LinearLayout>
 
     <LinearLayout
@@ -251,11 +240,10 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/mazzard"
+            android:fontFamily="@font/inter_regular"
             android:text="Failed"
             android:textAlignment="textStart"
-            android:textColor="#738194"
-            android:textStyle="bold" />
+            android:textColor="@color/filled_text" />
 
         <TextView
             android:id="@+id/failed_amount_text_view"
@@ -263,15 +251,14 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_weight="1"
-            android:fontFamily="@font/mazzard"
+            android:fontFamily="@font/inter_regular"
             android:text="NGN0.00"
             android:textAlignment="textEnd"
-            android:textColor="#738194"
-            android:textStyle="bold" />
+            android:textColor="@color/filled_text"/>
     </LinearLayout>
 
     <com.google.android.material.button.MaterialButton
-        android:id="@+id/printButton"
+        android:id="@+id/continueButton"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="50dp"
@@ -280,5 +267,4 @@
         android:backgroundTint="@color/failed"
         android:text="@string/print_report"
         android:textColor="@android:color/white" />
-
 </androidx.appcompat.widget.LinearLayoutCompat>

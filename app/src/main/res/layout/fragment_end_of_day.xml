@@ -29,8 +29,7 @@
             android:gravity="center"
             android:text="@string/end_of_day_report"
             android:textAlignment="center"
-            android:textColor="@color/black"
-            android:textStyle="bold" />
+            android:textColor="@color/black" />
 
     </FrameLayout>
 
@@ -46,8 +45,7 @@
         android:gravity="center"
         android:text="Customize and export a file containing transaction history report in CSV file format."
         android:textAlignment="center"
-        android:textColor="#738194"
-        android:textStyle="bold" />
+        android:textColor="@color/filled_text" />
 
     <androidx.appcompat.widget.LinearLayoutCompat
         android:id="@+id/textFieldBg"
@@ -108,8 +106,7 @@
             android:gravity="center"
             android:text="Select Report Type"
             android:textAlignment="center"
-            android:textColor="#738194"
-            android:textStyle="bold" />
+            android:textColor="@color/filled_text" />
 
         <View
             android:layout_width="wrap_content"
@@ -133,8 +130,7 @@
         android:paddingBottom="12dp"
         android:text="@string/summary"
         android:textAlignment="textStart"
-        android:textColor="#738194"
-        android:textStyle="bold" />
+        android:textColor="@color/filled_text" />
 
     <TextView
         android:id="@+id/full_report_text_view"
@@ -150,8 +146,7 @@
         android:paddingBottom="12dp"
         android:text="@string/full_report"
         android:textAlignment="textStart"
-        android:textColor="#738194"
-        android:textStyle="bold" />
+        android:textColor="@color/filled_text" />
 
     <com.google.android.material.button.MaterialButton
         android:id="@+id/previewSummaryButton"

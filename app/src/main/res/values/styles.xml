@@ -90,6 +90,28 @@
         <!--        <item name="android:letterSpacing">-0.02</item> &lt;!&ndash; -2% &ndash;&gt;-->
     </style>
 
+    <style name="f14w500">
+        <!--        <item name="android:textStyle">bold</item>-->
+        <item name="android:textSize">14sp</item>
+        <item name="android:fontFamily">@font/inter_regular</item>
+        <!--        <item name="android:lineSpacingExtra">4sp</item>-->
+        <item name="android:textAlignment">textStart</item>
+        <item name="android:textFontWeight">500</item>
+        <!--        <item name="android:lineHeight">28sp</item>-->
+        <!--        <item name="android:letterSpacing">-0.02</item> &lt;!&ndash; -2% &ndash;&gt;-->
+    </style>
+
+    <style name="f15w400">
+        <!--        <item name="android:textStyle">bold</item>-->
+        <item name="android:textSize">15sp</item>
+        <item name="android:fontFamily">@font/inter_medium</item>
+        <!--        <item name="android:lineSpacingExtra">4sp</item>-->
+        <item name="android:textAlignment">center</item>
+        <item name="android:textFontWeight">400</item>
+        <!--        <item name="android:lineHeight">28sp</item>-->
+        <!--        <item name="android:letterSpacing">-0.02</item> &lt;!&ndash; -2% &ndash;&gt;-->
+    </style>
+
     <style name="f11w400">
         <!--        <item name="android:textStyle">bold</item>-->
         <item name="android:textSize">11sp</item>
@@ -119,13 +141,11 @@
         <item name="android:textFontWeight">700</item>
     </style>
 
-    <style name="f14w500">
+    <style name="f28w400">
         <!--        <item name="android:textStyle">bold</item>-->
-        <item name="android:textSize">14sp</item>
+        <item name="android:textSize">28sp</item>
         <item name="android:lineSpacingExtra">2sp</item>
         <item name="android:textAlignment">textStart</item>
-        <item name="android:textFontWeight">500</item>
+        <item name="android:textFontWeight">400</item>
     </style>
-
-
 </resources>

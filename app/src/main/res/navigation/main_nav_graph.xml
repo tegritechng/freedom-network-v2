@@ -33,11 +33,33 @@
         android:id="@+id/transactionRecordFragment"
         android:name="com.threelineng.freedomnetwork.transactions.TransactionRecordFragment"
         android:label="fragment_transaction_report"
+        tools:layout="@layout/fragment_transaction_report">
+        <action
+            android:id="@+id/action_transactionRecordFragment_to_transactionReceiptFragment"
+            app:destination="@id/transactionReceiptFragment" />
+        <action
+            android:id="@+id/action_transactionRecordFragment_to_transactionDetailsFragment2"
+            app:destination="@id/transactionDetailsFragment2" />
+    </fragment>
+    <fragment
+        android:id="@+id/transactionRecordFragment"
+        android:name="com.threelineng.freedomnetwork.transactions.TransactionRecordFragment"
+        android:label="fragment_transaction_report"
         tools:layout="@layout/fragment_transaction_report" />
     <include app:graph="@navigation/withdrawal_nav_graph" />
     <include app:graph="@navigation/end_of_day_nav_graph" />
     <include app:graph="@navigation/transfer_nav_graph" />
     <include app:graph="@navigation/bills_nav_graph" />
     <include app:graph="@navigation/network_nav_graph" />
+    <fragment
+        android:id="@+id/transactionReceiptFragment"
+        android:name="com.threelineng.freedomnetwork.common.ui.TransactionReceiptFragment"
+        android:label="fragment_transaction_receipt"
+        tools:layout="@layout/fragment_transaction_receipt" />
+    <fragment
+        android:id="@+id/transactionDetailsFragment2"
+        android:name="com.threelineng.freedomnetwork.common.ui.TransactionDetailsFragment"
+        android:label="fragment_transaction_details"
+        tools:layout="@layout/fragment_transaction_details" />
 
 </navigation>

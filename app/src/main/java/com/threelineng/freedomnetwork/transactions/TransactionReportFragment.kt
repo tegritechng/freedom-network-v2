@@ -41,6 +41,9 @@ class TransactionRecordFragment : Fragment() {
                 findNavController().popBackStack()
             }
             transactionsListAdapter = TransactionsListAdapter {
+                findNavController().navigate(
+                    R.id.action_transactionRecordFragment_to_transactionDetailsFragment2
+                )
 //                findNavController().navigate(
 //                    TransactionHistoryFragmentDirections.actionTransactionHistoryFragmentToTransactionItemDetailsFragment(
 //                        it

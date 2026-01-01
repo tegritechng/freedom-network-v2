@@ -22,12 +22,26 @@
 
     <string name="amount_format">\u20A6 %1$s</string>
     <string name="amount_format_ngn">NGN %1$s</string>
+    <string name="select_account_type">Select Account Type</string>
+    <string name="savings">Savings</string>
+    <string name="current">Current</string>
+    <string name="default_acc">Default</string>
     <string name="transaction_reports">Transaction Reports</string>
     <string name="end_of_day_report">End of Day Report</string>
     <string name="full_report">Full Report</string>
     <string name="summary">Summary</string>
     <string name="transfer_method">Transfer Method</string>
     <string name="error_required">Required</string>
+    <string name="receipt">Receipt</string>
+    <string name="loading">transaction_status</string>
+    <string name="date_time">Date/Time</string>
+    <string name="successful">Successful</string>
+    <string name="card">Card</string>
+    <string name="payment_method">Payment Method</string>
+    <string name="reference">Reference</string>
+    <string name="amount_paid">Amount Paid</string>
+    <string name="reprint_receipt">Reprint Receipt</string>
+    <string name="print_receipt">Print Receipt</string>
     <string name="preview_summary">Preview Summary</string>
     <string name="print_report">Print Report</string>
     <string name="select_date_range">Select date range</string>

@@ -20,5 +20,13 @@
         android:label="fragment_insert_card"
         tools:layout="@layout/fragment_insert_card" >
 
+        <action
+            android:id="@+id/action_insertCardFragment_to_selectAccountTypeFragment"
+            app:destination="@id/selectAccountTypeFragment" />
     </fragment>
+    <dialog
+        android:id="@+id/selectAccountTypeFragment"
+        android:name="com.threelineng.freedomnetwork.withdrawal.SelectAccountTypeFragment"
+        android:label="fragment_select_account_type"
+        tools:layout="@layout/fragment_select_account_type" />
 </navigation>

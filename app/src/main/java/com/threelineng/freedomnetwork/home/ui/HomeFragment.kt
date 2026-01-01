@@ -39,15 +39,15 @@ class HomeFragment : Fragment() {
                 when (it.type) {
 
                     HomeItemType.WITHDRAW -> {
-                        findNavController().navigate(R.id.action_homeFragment_to_withdrawal_nav_graph)
+                        findNavController().navigate(R.id.withdrawal_nav_graph)
                     }
 
                     HomeItemType.TRANSFER -> {
-                        findNavController().navigate(R.id.action_homeFragment_to_transfer_nav_graph)
+                        findNavController().navigate(R.id.transfer_nav_graph)
                     }
 
                     HomeItemType.END_OF_DAY -> {
-                        findNavController().navigate(R.id.action_homeFragment_to_end_of_day_nav_graph)
+                        findNavController().navigate(R.id.end_of_day_nav_graph)
 
                     }
 

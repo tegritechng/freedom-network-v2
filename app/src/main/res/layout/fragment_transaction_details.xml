@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.appcompat.widget.LinearLayoutCompat xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/gradient_bg"
+    tools:context=".common.ui.TransactionDetailsFragment">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="@string/amount_paid"
+        android:layout_marginTop="120dp"
+        style="@style/f15w400"/>
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="5,000.00"
+        android:layout_marginTop="24dp"
+        style="@style/f24w700"/>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:orientation="vertical">
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/f12w400"
+                android:id="@+id/tv_reference"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/reference"
+                android:textAlignment="textStart"
+                android:textColor="@color/filled_text" />
+
+            <TextView
+                android:id="@+id/tv_reference_value"
+                style="@style/f12w400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:text="00022155454545"
+                android:textAlignment="textEnd"
+                android:textColor="@color/filled_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/f12w400"
+                android:id="@+id/tv_payment_method"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/payment_method"
+                android:textAlignment="textStart"
+                android:textColor="@color/filled_text" />
+
+            <TextView
+                android:id="@+id/tv_payment_method_value"
+                style="@style/f12w400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/card"
+                android:textAlignment="textEnd"
+                android:textColor="@color/filled_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/f12w400"
+                android:id="@+id/tv_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:text="Status"
+                android:textAlignment="textStart"
+                android:textColor="@color/filled_text" />
+
+            <TextView
+                android:id="@+id/tv_status_value"
+                style="@style/f12w400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/successful"
+                android:textAlignment="textEnd"
+                android:textColor="@color/filled_text" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="18dp"
+            android:layout_marginTop="11dp"
+            android:layout_marginEnd="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                style="@style/f12w400"
+                android:id="@+id/tv_date_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:text="@string/date_time"
+                android:textAlignment="textStart"
+                android:textColor="@color/filled_text" />
+
+            <TextView
+                android:id="@+id/tv_date_time_value"
+                style="@style/f12w400"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:fontFamily="@font/inter_regular"
+                android:text="06 May, 2024 | 11:30 PM"
+                android:textAlignment="textEnd"
+                android:textColor="@color/filled_text" />
+        </LinearLayout>
+    </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/btn_print_receipt"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/failed"
+        android:text="@string/reprint_receipt"
+        android:textColor="@android:color/white" />
+
+</androidx.appcompat.widget.LinearLayoutCompat>

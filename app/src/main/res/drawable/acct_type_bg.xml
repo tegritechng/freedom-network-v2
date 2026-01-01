@@ -1,7 +1,7 @@
 <shape xmlns:android="http://schemas.android.com/apk/res/android"
     android:shape="rectangle">
 
-    <solid android:color="@color/agent_account_bg" />
+    <solid android:color="@color/acct_type_bg" />
     <!-- Ensure NO border -->
     <stroke android:width="0dp" android:color="@android:color/transparent" />
 </shape>

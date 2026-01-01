@@ -24,8 +24,13 @@ class EndOfDaySummaryFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
         with(binding) {
+
             backIcon.setOnClickListener {
                 findNavController().popBackStack()
+            }
+
+            printButton.setOnClickListener {
+
             }
         }
     }

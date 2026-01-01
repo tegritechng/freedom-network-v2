@@ -64,7 +64,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/mazzard"
-            android:text="@string/summary"
+            android:text="Today"
             android:textAlignment="textEnd"
             android:textColor="#738194"
             android:textStyle="bold" />
@@ -132,7 +132,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/mazzard"
-            android:text="@string/summary"
+            android:text="0"
             android:textAlignment="textEnd"
             android:textColor="#738194"
             android:textStyle="bold" />
@@ -164,7 +164,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/mazzard"
-            android:text="@string/summary"
+            android:text="0"
             android:textAlignment="textEnd"
             android:textColor="#738194"
             android:textStyle="bold" />
@@ -232,7 +232,7 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/mazzard"
-            android:text="@string/summary"
+            android:text="NGN0.00"
             android:textAlignment="textEnd"
             android:textColor="#738194"
             android:textStyle="bold" />
@@ -264,9 +264,21 @@
             android:layout_height="wrap_content"
             android:layout_weight="1"
             android:fontFamily="@font/mazzard"
-            android:text="@string/summary"
+            android:text="NGN0.00"
             android:textAlignment="textEnd"
             android:textColor="#738194"
             android:textStyle="bold" />
     </LinearLayout>
+
+    <com.google.android.material.button.MaterialButton
+        android:id="@+id/printButton"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="50dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="50dp"
+        android:backgroundTint="@color/failed"
+        android:text="@string/print_report"
+        android:textColor="@android:color/white" />
+
 </androidx.appcompat.widget.LinearLayoutCompat>

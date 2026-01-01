@@ -28,5 +28,12 @@
     <string name="summary">Summary</string>
     <string name="transfer_method">Transfer Method</string>
     <string name="error_required">Required</string>
+    <string name="preview_summary">Preview Summary</string>
+    <string name="print_report">Print Report</string>
+    <string name="select_date_range">Select date range</string>
+    <string name="select_biller">Select Biller</string>
+    <string name="network_signal">Network Signal</string>
+    <string name="select_tv_provider">Select TV Provider</string>
+    <string name="select_disco">Select Disco</string>
 
 </resources>

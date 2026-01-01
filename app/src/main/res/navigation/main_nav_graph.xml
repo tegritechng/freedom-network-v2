@@ -9,16 +9,10 @@
         android:id="@+id/homeFragment"
         android:name="com.threelineng.freedomnetwork.home.ui.HomeFragment"
         android:label="fragment_home"
-        tools:layout="@layout/fragment_home" >
+        tools:layout="@layout/fragment_home">
         <action
             android:id="@+id/action_homeFragment_to_transactionRecordFragment"
             app:destination="@id/transactionRecordFragment" />
-    </fragment>
-    <fragment
-        android:id="@+id/transactionRecordFragment"
-        android:name="com.threelineng.freedomnetwork.transactions.TransactionRecordFragment"
-        android:label="fragment_transaction_report"
-        tools:layout="@layout/fragment_transaction_report" >
         <action
             android:id="@+id/action_homeFragment_to_withdrawal_nav_graph"
             app:destination="@id/withdrawal_nav_graph" />
@@ -28,9 +22,22 @@
         <action
             android:id="@+id/action_homeFragment_to_transfer_nav_graph"
             app:destination="@id/transfer_nav_graph" />
+        <action
+            android:id="@+id/action_homeFragment_to_bills_nav_graph"
+            app:destination="@id/bills_nav_graph" />
+        <action
+            android:id="@+id/action_homeFragment_to_network_nav_graph"
+            app:destination="@id/network_nav_graph" />
     </fragment>
+    <fragment
+        android:id="@+id/transactionRecordFragment"
+        android:name="com.threelineng.freedomnetwork.transactions.TransactionRecordFragment"
+        android:label="fragment_transaction_report"
+        tools:layout="@layout/fragment_transaction_report" />
     <include app:graph="@navigation/withdrawal_nav_graph" />
     <include app:graph="@navigation/end_of_day_nav_graph" />
     <include app:graph="@navigation/transfer_nav_graph" />
+    <include app:graph="@navigation/bills_nav_graph" />
+    <include app:graph="@navigation/network_nav_graph" />
 
 </navigation>

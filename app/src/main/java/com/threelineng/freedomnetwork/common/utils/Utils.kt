@@ -234,8 +234,7 @@ fun Fragment.showSnack(
 
 fun String.capitalizeWord(): String {
     return this.trim() // remove leading/trailing spaces
-        .lowercase(Locale.getDefault())
-        .split("\\s+".toRegex()) // split by one or more spaces
+        .lowercase(Locale.getDefault()).split("\\s+".toRegex()) // split by one or more spaces
         .joinToString(" ") { word ->
             word.replaceFirstChar { char ->
                 if (char.isLowerCase()) char.titlecase(Locale.getDefault())
@@ -247,3 +246,9 @@ fun String.capitalizeWord(): String {
 fun String.cleanAmount(): String {
     return replace(",", "")
 }
+
+fun String.toInitials(): String =
+    trim()
+        .split("\\s+".toRegex())
+        .mapNotNull { it.firstOrNull()?.uppercaseChar() }
+        .joinToString("")

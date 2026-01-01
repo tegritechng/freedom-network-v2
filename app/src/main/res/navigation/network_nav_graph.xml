@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/network_nav_graph"
+    app:startDestination="@id/networkFragment">
+
+    <fragment
+        android:id="@+id/networkFragment"
+        android:name="com.threelineng.freedomnetwork.network.NetworkFragment"
+        android:label="fragment_network"
+        tools:layout="@layout/fragment_network" />
+</navigation>

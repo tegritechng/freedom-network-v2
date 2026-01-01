@@ -30,11 +30,12 @@ class HomeViewModel() : ViewModel() {
         val homeList = listOf<HomeItemModel>(
             HomeItemModel(R.drawable.ic_withdrawal, HomeItemType.WITHDRAW),
             HomeItemModel(R.drawable.ic_transfer, HomeItemType.TRANSFER),
-            HomeItemModel(R.drawable.ic_transactions, HomeItemType.END_OF_DAY),
-            HomeItemModel(R.drawable.ic_airtime, HomeItemType.AIRTIME),
             HomeItemModel(R.drawable.ic_transactions, HomeItemType.TRANS_HISTORY),
-            HomeItemModel(R.drawable.ic_bills, HomeItemType.BANK_NETWORK),
+            HomeItemModel(R.drawable.ic_airtime, HomeItemType.AIRTIME),
+            HomeItemModel(R.drawable.ic_bills, HomeItemType.BILLS),
+            HomeItemModel(R.drawable.ic_transactions, HomeItemType.END_OF_DAY),
             HomeItemModel(R.drawable.ic_card_balance, HomeItemType.CHECK_CARD_BALANCE),
+            HomeItemModel(R.drawable.ic_bills, HomeItemType.BANK_NETWORK),
         )
     }
 

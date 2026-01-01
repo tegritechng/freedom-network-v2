@@ -60,7 +60,7 @@ class HomeFragment : Fragment() {
                     }
 
                     HomeItemType.BANK_NETWORK -> {
-//                        findNavController().navigate(R.id.action_homeFragment_to_network_nav_graph)
+                        findNavController().navigate(R.id.action_homeFragment_to_network_nav_graph)
                     }
 
                     HomeItemType.CHECK_CARD_BALANCE -> {
@@ -71,7 +71,7 @@ class HomeFragment : Fragment() {
                     }
 
                     HomeItemType.BILLS -> {
-
+                        findNavController().navigate(R.id.action_homeFragment_to_bills_nav_graph)
                     }
                 }
             }

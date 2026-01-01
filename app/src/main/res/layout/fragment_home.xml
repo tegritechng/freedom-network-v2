@@ -18,11 +18,11 @@
             android:id="@+id/tv_initials"
             android:layout_width="20dp"
             android:layout_height="20dp"
-            android:background="@drawable/initials_bg"
-            android:gravity="center"
             android:layout_alignParentStart="true"
             android:layout_centerVertical="true"
             android:layout_marginEnd="8dp"
+            android:background="@drawable/initials_bg"
+            android:gravity="center"
             android:text="RA"
             android:textColor="@android:color/white"
             android:textSize="10sp"
@@ -32,88 +32,95 @@
             android:id="@+id/agent_name_text_view"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="8dp"
             android:layout_centerVertical="true"
+            android:layout_marginLeft="8dp"
             android:layout_toRightOf="@id/tv_initials"
+            android:text="Hi, Stromag Ventures"
             android:textAllCaps="false"
             android:textAppearance="@style/f12w500"
             android:textColor="@color/freedom_dark"
-            tools:text="Hi, Stromag Ventures"
-            android:text="Hi, Stromag Ventures" />
+            tools:text="Hi, Stromag Ventures" />
 
         <LinearLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_centerVertical="true"
             android:layout_alignParentEnd="true"
+            android:layout_centerVertical="true"
             android:orientation="horizontal">
+
             <ImageView
                 android:layout_width="wrap_content"
                 android:layout_height="wrap_content"
-                android:src="@drawable/network_icon"
                 android:layout_marginRight="8dp"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/network_icon" />
 
             <ImageView
                 android:layout_width="20dp"
                 android:layout_height="20dp"
-                android:src="@drawable/notification"
-                android:scaleType="centerCrop"/>
+                android:scaleType="centerCrop"
+                android:src="@drawable/notification" />
 
         </LinearLayout>
-
-
 
     </RelativeLayout>
 
-    <FrameLayout
+    <com.google.android.material.card.MaterialCardView
         android:layout_width="match_parent"
-        android:layout_height="84dp">
+        android:layout_height="84dp"
+        android:layout_marginTop="8dp"
+        app:cardBackgroundColor="#F9FAFD"
+        app:cardCornerRadius="10dp"
+        app:strokeWidth="0dp">
 
-        <!-- Background shape -->
-        <LinearLayout
-            android:layout_width="match_parent"
-            android:layout_height="match_parent"
-            android:background="@drawable/agent_account_bg"
-            android:orientation="horizontal">
-
-            <!-- Left empty space (61%) -->
-            <View
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="61" />
-
-            <!-- Right image (39%) -->
-            <ImageView
-                android:layout_width="0dp"
-                android:layout_height="match_parent"
-                android:layout_weight="39"
-                android:src="@drawable/dash_bg"
-                android:scaleType="centerCrop"/>
-        </LinearLayout>
-
-        <!-- Centered text -->
-        <TextView
-            android:id="@+id/centerText"
+        <FrameLayout
             android:layout_width="wrap_content"
-            android:layout_height="wrap_content"
-            tools:text="222-9083-982"
-            android:lineHeight="33dp"
-            android:text="222-9083-982"
-            android:textColor="@android:color/white"
-            android:textSize="28sp"
-            android:textStyle="bold"
-            android:fontFamily="@font/roboto"
-            android:layout_gravity="center" />
+            android:layout_height="wrap_content">
 
-    </FrameLayout>
+            <!-- Background shape -->
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/agent_account_bg"
+                android:orientation="horizontal">
 
+                <!-- Left empty space (61%) -->
+                <View
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="61" />
+
+                <!-- Right image (39%) -->
+                <ImageView
+                    android:layout_width="0dp"
+                    android:layout_height="match_parent"
+                    android:layout_weight="39"
+                    android:scaleType="centerCrop"
+                    android:src="@drawable/dash_bg" />
+            </LinearLayout>
+
+            <!-- Centered text -->
+            <TextView
+                android:id="@+id/centerText"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:fontFamily="@font/roboto"
+                android:lineHeight="33dp"
+                android:text="222-9083-982"
+                android:textColor="@android:color/white"
+                android:textSize="28sp"
+                android:textStyle="bold"
+                tools:text="222-9083-982" />
+        </FrameLayout>
+
+    </com.google.android.material.card.MaterialCardView>
 
     <TextView
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:text="@string/quick_actions"
         android:layout_marginTop="16dp"
+        android:text="@string/quick_actions"
         android:textAlignment="textStart"
         android:textAllCaps="false"
         android:textAppearance="@style/f12w500"
@@ -131,8 +138,8 @@
             android:id="@+id/home_grid"
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:clipToPadding="false"
             android:layout_gravity="center_horizontal"
+            android:clipToPadding="false"
             android:overScrollMode="never"
             android:paddingStart="11dp"
             android:paddingTop="5dp"

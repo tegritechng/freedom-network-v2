@@ -47,12 +47,13 @@ class NetworkFragment : Fragment() {
             listViewAdapter = NetworkListViewAdapter {
 
             }
-            binding.recyclerView.apply {
+
+            recyclerView.apply {
                 adapter = listViewAdapter
                 layoutManager = LinearLayoutManager(requireContext())
             }
 
-            binding.editTextSearch.doOnTextChanged { text, start, before, count ->
+            editTextSearch.doOnTextChanged { text, start, before, count ->
                 viewModel.searchFilterChanged(text?.trim().toString())
             }
 
@@ -69,16 +70,17 @@ class NetworkFragment : Fragment() {
                     viewModel.uiState.collectLatest { state ->
                         with(state) {
                             if (isLoading) {
-                                binding.progressBar.visibility = View.VISIBLE
-                                binding.emptyContent.root.visibility = View.GONE
-                                binding.recyclerView.visibility = View.GONE
+                                progressBar.visibility = View.VISIBLE
+                                emptyContent.root.visibility = View.GONE
+                                recyclerView.visibility = View.GONE
                             } else if (networks.isEmpty()) {
-                                binding.progressBar.visibility = View.GONE
-                                binding.emptyContent.root.visibility = View.VISIBLE
-                                binding.recyclerView.visibility = View.GONE
+                                progressBar.visibility = View.GONE
+                                emptyContent.root.visibility = View.VISIBLE
+                                recyclerView.visibility = View.GONE
                             } else {
-                                binding.recyclerView.visibility = View.VISIBLE
-                                binding.progressBar.visibility = View.GONE
+                                recyclerView.visibility = View.VISIBLE
+                                progressBar.visibility = View.GONE
+                                emptyContent.root.visibility = View.GONE
                                 listViewAdapter.submitList(networks)
                             }
                         }

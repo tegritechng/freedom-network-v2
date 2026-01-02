@@ -39,46 +39,51 @@ class BankListFragment : Fragment() {
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        binding.backIcon.setOnClickListener {
-            findNavController().popBackStack()
-        }
+        with(binding) {
 
-        bankListViewAdapter = BankListViewAdapter {
-            setFragmentResult(BANK_ITEM_REQUEST, bundleOf(BANK_ITEM_BUNDLE to it))
-            findNavController().popBackStack()
-        }
+            backIcon.setOnClickListener {
+                findNavController().popBackStack()
+            }
 
-        binding.recyclerView.apply {
-            adapter = bankListViewAdapter
-            layoutManager = LinearLayoutManager(requireContext())
-        }
+            bankListViewAdapter = BankListViewAdapter {
+                setFragmentResult(BANK_ITEM_REQUEST, bundleOf(BANK_ITEM_BUNDLE to it))
+                findNavController().popBackStack()
+            }
 
-        binding.editTextSearch.doOnTextChanged { text, start, before, count ->
-            bankViewModel.searchFilterChanged(text?.trim().toString())
-        }
-        lifecycleScope.launch {
-            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
-                bankViewModel.errorState.collectLatest { error ->
-                    showSnack(error)
+            recyclerView.apply {
+                adapter = bankListViewAdapter
+                layoutManager = LinearLayoutManager(requireContext())
+            }
+
+            editTextSearch.doOnTextChanged { text, start, before, count ->
+                bankViewModel.searchFilterChanged(text?.trim().toString())
+            }
+
+            lifecycleScope.launch {
+                viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                    bankViewModel.errorState.collectLatest { error ->
+                        showSnack(error)
+                    }
                 }
             }
-        }
-        lifecycleScope.launch {
-            viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
-                bankViewModel.uiState.collect { state ->
-                    with(state) {
-                        if (isLoading) {
-                            binding.progressBar.visibility = View.VISIBLE
-                            binding.emptyContent.root.visibility = View.GONE
-                            binding.recyclerView.visibility = View.GONE
-                        } else if (banks.isEmpty()) {
-                            binding.progressBar.visibility = View.GONE
-                            binding.emptyContent.root.visibility = View.VISIBLE
-                            binding.recyclerView.visibility = View.GONE
-                        } else {
-                            binding.recyclerView.visibility = View.VISIBLE
-                            binding.progressBar.visibility = View.GONE
-                            bankListViewAdapter.submitList(banks)
+            lifecycleScope.launch {
+                viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
+                    bankViewModel.uiState.collect { state ->
+                        with(state) {
+                            if (isLoading) {
+                                progressBar.visibility = View.VISIBLE
+                                emptyContent.root.visibility = View.GONE
+                                recyclerView.visibility = View.GONE
+                            } else if (banks.isEmpty()) {
+                                progressBar.visibility = View.GONE
+                                emptyContent.root.visibility = View.VISIBLE
+                                recyclerView.visibility = View.GONE
+                            } else {
+                                recyclerView.visibility = View.VISIBLE
+                                progressBar.visibility = View.GONE
+                                emptyContent.root.visibility = View.GONE
+                                bankListViewAdapter.submitList(banks)
+                            }
                         }
                     }
                 }

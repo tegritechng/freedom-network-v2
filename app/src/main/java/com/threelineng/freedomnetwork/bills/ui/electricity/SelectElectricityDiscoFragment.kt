@@ -5,7 +5,7 @@ import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import androidx.fragment.app.Fragment
-import androidx.fragment.app.viewModels
+import androidx.hilt.navigation.fragment.hiltNavGraphViewModels
 import androidx.lifecycle.Lifecycle
 import androidx.lifecycle.lifecycleScope
 import androidx.lifecycle.repeatOnLifecycle
@@ -15,13 +15,16 @@ import com.tegritech.commons.utils.viewBinding
 import com.threelineng.freedomnetwork.R
 import com.threelineng.freedomnetwork.common.utils.showSnack
 import com.threelineng.freedomnetwork.databinding.FragmentSelectElectricityDiscoBinding
+import dagger.hilt.android.AndroidEntryPoint
 import kotlinx.coroutines.flow.collectLatest
 import kotlinx.coroutines.launch
+import kotlin.getValue
 
+@AndroidEntryPoint
 class SelectElectricityDiscoFragment : Fragment() {
     private val binding by viewBinding<FragmentSelectElectricityDiscoBinding>()
     private lateinit var listViewAdapter: ElectricityProviderListAdapter
-    private val viewModel: ElectricityViewModel by viewModels()
+    private val viewModel: ElectricityViewModel by hiltNavGraphViewModels(R.id.bills_nav_graph)
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -40,12 +43,14 @@ class SelectElectricityDiscoFragment : Fragment() {
             }
 
             listViewAdapter = ElectricityProviderListAdapter {
-
+                findNavController().navigate(SelectElectricityDiscoFragmentDirections.actionSelectElectricityDiscoFragmentToElectricityFragment(it))
             }
-            binding.recyclerView.apply {
+
+            recyclerView.apply {
                 adapter = listViewAdapter
                 layoutManager = LinearLayoutManager(requireContext())
             }
+
             lifecycleScope.launch {
                 viewLifecycleOwner.repeatOnLifecycle(Lifecycle.State.STARTED) {
                     viewModel.errorState.collectLatest { error ->
@@ -59,16 +64,17 @@ class SelectElectricityDiscoFragment : Fragment() {
                     viewModel.uiState.collectLatest { state ->
                         with(state) {
                             if (isLoading) {
-                                binding.progressBar.visibility = View.VISIBLE
-                                binding.emptyContent.root.visibility = View.GONE
-                                binding.recyclerView.visibility = View.GONE
+                                progressBar.visibility = View.VISIBLE
+                                emptyContent.root.visibility = View.GONE
+                                recyclerView.visibility = View.GONE
                             } else if (providers.isEmpty()) {
-                                binding.progressBar.visibility = View.GONE
-                                binding.emptyContent.root.visibility = View.VISIBLE
-                                binding.recyclerView.visibility = View.GONE
+                                progressBar.visibility = View.GONE
+                                emptyContent.root.visibility = View.VISIBLE
+                                recyclerView.visibility = View.GONE
                             } else {
-                                binding.recyclerView.visibility = View.VISIBLE
-                                binding.progressBar.visibility = View.GONE
+                                recyclerView.visibility = View.VISIBLE
+                                emptyContent.root.visibility = View.GONE
+                                progressBar.visibility = View.GONE
                                 listViewAdapter.submitList(providers)
                             }
                         }

@@ -21,11 +21,37 @@
         android:id="@+id/selectCableTvProviderFragment"
         android:name="com.threelineng.freedomnetwork.bills.ui.cabletv.SelectCableTvProviderFragment"
         android:label="fragment_select_cable_tv_provider"
-        tools:layout="@layout/fragment_select_cable_tv_provider" />
+        tools:layout="@layout/fragment_select_cable_tv_provider" >
+        <action
+            android:id="@+id/action_selectCableTvProviderFragment_to_cableTVFragment"
+            app:destination="@id/cableTVFragment" />
+    </fragment>
     <fragment
         android:id="@+id/selectElectricityDiscoFragment"
         android:name="com.threelineng.freedomnetwork.bills.ui.electricity.SelectElectricityDiscoFragment"
         android:label="fragment_select_electricity_disco"
-        tools:layout="@layout/fragment_select_electricity_disco" />
+        tools:layout="@layout/fragment_select_electricity_disco" >
+        <action
+            android:id="@+id/action_selectElectricityDiscoFragment_to_electricityFragment"
+            app:destination="@id/electricityFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/cableTVFragment"
+        android:name="com.threelineng.freedomnetwork.bills.ui.cabletv.ui.CableTVFragment"
+        android:label="fragment_cable_t_v"
+        tools:layout="@layout/fragment_cable_t_v" >
+        <argument
+            android:name="providerItem"
+            app:argType="com.threelineng.freedomnetwork.bills.ui.cabletv.domain.CableTvProviderItem" />
+    </fragment>
+    <fragment
+        android:id="@+id/electricityFragment"
+        android:name="com.threelineng.freedomnetwork.bills.ui.electricity.ui.ElectricityFragment"
+        android:label="fragment_electricity"
+        tools:layout="@layout/fragment_electricity" >
+        <argument
+            android:name="providerItem"
+            app:argType="com.threelineng.freedomnetwork.bills.ui.electricity.domain.ElectricityTvProviderItem" />
+    </fragment>
 
 </navigation>

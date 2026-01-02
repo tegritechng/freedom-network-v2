@@ -45,35 +45,24 @@
         android:textAppearance="@style/f8w400"
         android:textStyle="normal" />
 
-    <LinearLayout
-        android:id="@+id/billerLayout"
+    <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_marginStart="17dp"
         android:layout_marginTop="5dp"
         android:layout_marginEnd="17dp"
-        android:background="@drawable/border_radius_5"
-        android:orientation="horizontal"
-        android:padding="12dp">
+        app:endIconDrawable="@drawable/ic_chevron_down"
+        app:endIconMode="custom">
 
-        <TextView
-            android:id="@+id/bank_name_textview"
-            android:layout_width="0dp"
+        <com.google.android.material.textfield.TextInputEditText
+            android:id="@+id/bankTextField"
+            style="@style/editText"
+            android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_gravity="center"
-            android:layout_marginStart="8dp"
-            android:layout_marginEnd="8dp"
-            android:layout_weight="1"
-            android:textAppearance="@style/f12w400"
-            tools:text="GT BANK PLC" />
-
-        <androidx.appcompat.widget.AppCompatImageView
-            android:layout_width="28dp"
-            android:layout_height="28dp"
-            android:layout_gravity="center"
-            android:padding="4dp"
-            android:src="@drawable/ic_chevron_down" />
-    </LinearLayout>
+            android:inputType="number"
+            android:maxLength="10"
+            android:textAlignment="textStart" />
+    </com.google.android.material.textfield.TextInputLayout>
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_width="match_parent"
@@ -100,8 +89,8 @@
         android:layout_marginStart="17dp"
         android:layout_marginTop="6dp"
         android:layout_marginEnd="17dp"
-        android:textAlignment="textStart"
         android:letterSpacing="0.03"
+        android:textAlignment="textStart"
         android:textAppearance="@style/f10w400"
         tools:text="Loren Ipsum" />
 

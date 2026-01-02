@@ -1,5 +1,6 @@
 package com.threelineng.freedomnetwork.withdrawal
 
+import android.content.res.ColorStateList
 import android.graphics.Color
 import android.graphics.drawable.InsetDrawable
 import android.os.Bundle
@@ -9,9 +10,13 @@ import android.view.View
 import android.view.ViewGroup
 import androidx.core.graphics.drawable.toDrawable
 import androidx.fragment.app.DialogFragment
+import com.tegritech.commons.utils.viewBinding
 import com.threelineng.freedomnetwork.R
+import com.threelineng.freedomnetwork.databinding.FragmentProcessingBinding
 
 class ProcessingFragment : DialogFragment() {
+
+    private val binding by viewBinding<FragmentProcessingBinding>()
 
     override fun onCreateView(
         inflater: LayoutInflater, container: ViewGroup?,
@@ -34,6 +39,7 @@ class ProcessingFragment : DialogFragment() {
             setBackgroundDrawable(InsetDrawable(Color.TRANSPARENT.toDrawable(), 10))
             setLayout(ViewGroup.LayoutParams.MATCH_PARENT, ViewGroup.LayoutParams.WRAP_CONTENT)
         }
+        binding.bg.backgroundTintList = ColorStateList.valueOf(requireContext().getColor(R.color.grey1))
     }
 
     companion object {

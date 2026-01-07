@@ -16,6 +16,9 @@
         <action
             android:id="@+id/action_billsFragment_to_selectCableTvProviderFragment"
             app:destination="@id/selectCableTvProviderFragment" />
+        <action
+            android:id="@+id/action_billsFragment_to_airtimeDataFragment"
+            app:destination="@id/airtimeDataFragment" />
     </fragment>
     <fragment
         android:id="@+id/selectCableTvProviderFragment"
@@ -53,5 +56,10 @@
             android:name="providerItem"
             app:argType="com.threelineng.freedomnetwork.bills.ui.electricity.domain.ElectricityTvProviderItem" />
     </fragment>
+    <fragment
+        android:id="@+id/airtimeDataFragment"
+        android:name="com.threelineng.freedomnetwork.bills.ui.airtime.AirtimeDataFragment"
+        android:label="fragment_airtime_data"
+        tools:layout="@layout/fragment_airtime_data" />
 
 </navigation>

@@ -51,5 +51,6 @@
     <string name="select_disco">Select Disco</string>
     <string name="make_purchase">Make Purchase</string>
     <string name="bill_payment">Bill payment</string>
+    <string name="select_network">Select Network</string>
 
 </resources>

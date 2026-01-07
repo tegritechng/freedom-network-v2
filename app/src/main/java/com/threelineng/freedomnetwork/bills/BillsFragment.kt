@@ -49,7 +49,10 @@ class BillsFragment : Fragment() {
                         }
                         setOnClickListener {
                             when (bill) {
-                                Bills.AIRTIME_DATA -> {}
+                                Bills.AIRTIME_DATA -> {
+                                    findNavController().navigate(R.id.action_billsFragment_to_airtimeDataFragment)
+                                }
+
                                 Bills.ELECTRICITY -> {
                                     findNavController().navigate(R.id.action_billsFragment_to_selectElectricityDiscoFragment)
                                 }
